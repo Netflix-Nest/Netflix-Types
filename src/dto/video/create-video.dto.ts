@@ -1,0 +1,37 @@
+import { IsNotEmpty, IsNumber, IsOptional, IsString } from "class-validator";
+import { VideoStatus } from "../../enum/video.status";
+
+export class CreateVideoDto {
+	@IsNotEmpty()
+	@IsNumber()
+	uploader: number;
+
+	@IsNotEmpty()
+	@IsString()
+	title: string;
+
+	@IsNotEmpty()
+	@IsNumber()
+	contentId: number;
+
+	@IsNotEmpty()
+	episodeNumber: number;
+
+	@IsNotEmpty()
+	seasonNumber: number;
+
+	@IsOptional()
+	status: VideoStatus;
+
+	@IsOptional()
+	originalUrl: string;
+
+	@IsOptional()
+	hlsUrl: string;
+
+	@IsNotEmpty()
+	fileName: string;
+
+	@IsOptional()
+	duration: number;
+}
