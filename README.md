@@ -1,31 +1,69 @@
-# @netflix-clone/types
+# @netflix-clone/shared
 
-Shared TypeScript types, DTOs, interfaces, and constants for the Netflix Clone project 😎.
+[![npm version](https://img.shields.io/npm/v/@netflix-clone/shared.svg?color=blue&logo=npm)](https://www.npmjs.com/package/@netflix-clone/shared)
+[![npm downloads](https://img.shields.io/npm/dm/@netflix-clone/shared.svg?color=green)](https://www.npmjs.com/package/@netflix-clone/shared)
+[![license](https://img.shields.io/github/license/netflix-clone/shared.svg)](./LICENSE)
+
+**Shared DTOs, Interfaces, and Constants for Netflix Clone**  
+A reusable package designed to be consumed by **Backend (NestJS)**, **Frontend (Next.js)**, and **Mobile (React Native)** clients.
+
+---
 
 ## Features
 
--   Centralized type definitions for backend and frontend
--   DTOs for API communication
--   Interfaces for models and entities
+-   Common **DTOs** (Data Transfer Objects) for API communication
+-   Shared **Interfaces** for strong typing across services
+-   Centralized **Constants & Enums** for consistency
+-   Works out-of-the-box with **NestJS**, **Next.js**, and **React Native**
+-   Designed for **scalable microservices architecture**
+
+---
 
 ## Installation
 
-```sh
+```bash
 npm install @netflix-clone/types
+# or
+yarn add @netflix-clone/types
 ```
 
 ## Usage
 
-Import types in your project:
+DTOs
 
-```ts
-import { UserDto, Movie, Genre } from "@netflix-clone/types";
+```bash
+import { CreateUserDto } from '@netflix-clone/types';
+
+const dto = new CreateUserDto();
+dto.email = "user@example.com";
+dto.password = "superSecret";
 ```
 
-## Contributing
+Interfaces
 
-Feel free to open issues or submit PRs!
+```bash
+import { User } from '@netflix-clone/types';
+
+const user: User = {
+  id: "1",
+  email: "user@example.com"
+};
+
+```
+
+Constants
+
+```bash
+import { ROLES } from '@netflix-clone/types';
+
+console.log(ROLES.ADMIN); // "admin"
+```
+
+---
+
+Tips: Use this package to keep your Backend, Web, and Mobile apps always in sync with shared types.
 
 ## License
 
-MIT © [Cao Nguyen Tri Ngoc](LICENSE)
+This project is licensed under the terms of the MIT License.
+See the LICENSEfile for details.
