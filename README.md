@@ -1,8 +1,8 @@
 # README.md
 
-# @netflix-clone/types 😎
+# @netflix-clone/types
 
-Shared TypeScript types, DTOs, interfaces, and constants for the Netflix Clone project.
+Shared TypeScript types, DTOs, interfaces, and constants for the Netflix Clone project 😎.
 
 ## Features
 
