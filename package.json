@@ -1,36 +1,36 @@
 {
-	"name": "@netflix-clone/types",
-	"version": "1.0.2",
-	"description": "Shared DTOs, interfaces and constants for Netflix Clone",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"scripts": {
-		"build": "tsc -p tsconfig.json",
-		"prepublishOnly": "npm run build",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [
-		"netflix",
-		"dto",
-		"shared",
-		"types"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Netflix-Nest/Netflix-Types.git"
-	},
-	"author": "Cao Nguyen Tri Ngoc",
-	"license": "MIT",
-	"type": "commonjs",
-	"bugs": {
-		"url": "https://github.com/Netflix-Nest/Netflix-Types/issues"
-	},
-	"homepage": "https://github.com/Netflix-Nest/Netflix-Types#readme",
-	"dependencies": {
-		"class-transformer": "^0.5.1",
-		"class-validator": "^0.14.2"
-	},
-	"devDependencies": {
-		"typescript": "^5.9.2"
-	}
+  "name": "@netflix-clone/types",
+  "version": "1.0.5",
+  "description": "Shared DTOs, interfaces and constants for Netflix Clone",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "netflix",
+    "dto",
+    "shared",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Netflix-Nest/Netflix-Types.git"
+  },
+  "author": "Cao Nguyen Tri Ngoc",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Netflix-Nest/Netflix-Types/issues"
+  },
+  "homepage": "https://github.com/Netflix-Nest/Netflix-Types#readme",
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
 }
