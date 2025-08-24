@@ -1,0 +1,29 @@
+src/
+test/
+__tests__/
+coverage/
+
+# Config, scripts
+tsconfig.json
+tsconfig.build.json
+jest.config.js
+*.log
+*.tsbuildinfo
+
+# Environment
+.env
+.env.*
+
+node_modules/
+
+# CI/CD
+Dockerfile
+docker-compose.yml
+.github/
+.vscode/
+.idea/
+
+# Lockfile
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
