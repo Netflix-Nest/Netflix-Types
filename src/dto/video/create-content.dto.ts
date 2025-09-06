@@ -8,7 +8,7 @@ import {
   IsNumber,
   IsBoolean,
   IsDateString,
-} from 'class-validator';
+} from "class-validator";
 
 export class CreateContentDto {
   @IsString()
@@ -39,12 +39,13 @@ export class CreateContentDto {
   @IsString()
   director?: string;
 
-  @IsEnum(['single', 'series'])
-  type: 'single' | 'series';
+  @IsEnum(["single", "series"])
+  type: "single" | "series";
 
   @IsOptional()
-  @IsInt()
-  videoId?: number;
+  @IsArray()
+  @IsInt({ each: true })
+  videoIds?: number[];
 
   @IsOptional()
   @IsInt()
