@@ -90,9 +90,9 @@ export class CreateContentDto {
   @IsString()
   season: string;
 
-  @IsOptional()
-  @IsInt()
-  trailerId?: number;
+  @IsNotEmpty()
+  @IsString()
+  trailer: string;
 
   @IsNotEmpty()
   @IsInt()
