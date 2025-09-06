@@ -4,3 +4,7 @@ export interface RegisterUser {
     fullName: string;
     role: string;
 }
+export declare class UpdateUserTokenDto {
+    refreshToken: string;
+    userId: number;
+}
