@@ -11,6 +11,10 @@ import {
 } from "class-validator";
 
 export class CreateContentDto {
+  @IsOptional()
+  @IsNumber()
+  id?: number;
+
   @IsString()
   @IsNotEmpty()
   title: string;
