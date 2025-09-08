@@ -29,5 +29,24 @@ export * from "./enum/user.enum";
 export * from "./enum/video.status";
 
 // Interfaces
-export * from "./interfaces/auth.interfaces";
-export * from "./interfaces/user.interfaces";
+export * from "./interfaces/auth/permission.interfaces";
+export * from "./interfaces/auth/role.interfaces";
+export * from "./interfaces/auth/auth.interfaces";
+
+export * from "./interfaces/comment/comment.interfaces";
+
+export * from "./interfaces/engagement/bookmark.interfaces";
+export * from "./interfaces/engagement/history.interfaces";
+export * from "./interfaces/engagement/watchlist.interfaces";
+
+export * from "./interfaces/notification/notification.interfaces";
+
+export * from "./interfaces/user/user.interfaces";
+export * from "./interfaces/user/user.register";
+
+export * from "./interfaces/video/actor.interfaces";
+export * from "./interfaces/video/content.interfaces";
+export * from "./interfaces/video/genre.interfaces";
+export * from "./interfaces/video/series.interfaces";
+export * from "./interfaces/video/tag.interfaces";
+export * from "./interfaces/video/video.interfaces";
