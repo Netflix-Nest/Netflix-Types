@@ -104,10 +104,21 @@ export class CreateContentDto {
 }
 
 export class QueryContentExcludeIdsFilter {
-  ids?: number[];
-  currentPage?: number;
-  limit?: number;
-  additionalFilters?: any;
-  sortField?: string;
-  sortOrder?: "ASC" | "DESC";
+  @IsNotEmpty()
+  ids: number[];
+
+  @IsOptional()
+  currentPage: number;
+
+  @IsOptional()
+  limit: number;
+
+  @IsOptional()
+  additionalFilters: any;
+
+  @IsOptional()
+  sortField: string;
+
+  @IsOptional()
+  sortOrder: "ASC" | "DESC";
 }
