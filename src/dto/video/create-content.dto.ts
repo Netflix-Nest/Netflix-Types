@@ -102,3 +102,12 @@ export class CreateContentDto {
   @IsInt()
   ageRating: number;
 }
+
+export class QueryContentExcludeIdsFilter {
+  ids?: number[];
+  currentPage?: number;
+  limit?: number;
+  additionalFilters?: any;
+  sortField?: string;
+  sortOrder?: "ASC" | "DESC";
+}
