@@ -114,6 +114,9 @@ export class QueryContentExcludeIdsFilter {
   limit: number;
 
   @IsOptional()
+  qs: string;
+
+  @IsOptional()
   additionalFilters: any;
 
   @IsOptional()
