@@ -10,5 +10,5 @@ export class Comment {
 
 export class CommentClient extends Comment {
   _id: string;
-  replies?: Comment[];
+  replies?: CommentClient[];
 }
