@@ -7,3 +7,8 @@ export class Comment {
   createdAt: Date;
   updatedAt: Date;
 }
+
+export class CommentClient extends Comment {
+  _id: string;
+  replies?: Comment[];
+}
