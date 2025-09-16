@@ -1,5 +1,6 @@
 export interface Comment {
   userId: number;
+  fullName: string;
   content: string;
   contentId: number;
   parentId: string | null; // ObjectId
