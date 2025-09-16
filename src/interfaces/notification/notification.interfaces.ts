@@ -1,6 +1,6 @@
 import { Channels, Status, StatusInApp } from "../../enum/notification.enum";
 
-export class Notification {
+export interface Notification {
   id: string;
   userId: string;
   title: string;

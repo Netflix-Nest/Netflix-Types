@@ -4,7 +4,7 @@ import { Series } from "./series.interfaces";
 import { Tag } from "./tag.interfaces";
 import { Video } from "./video.interfaces";
 
-export class Content {
+export interface Content {
   id: number;
   title: string;
   slug: string;

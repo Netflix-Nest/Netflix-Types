@@ -1,6 +1,6 @@
 import { Content } from "./content.interfaces";
 
-export class Tag {
+export interface Tag {
   id: number;
   name: string;
   contents?: Content[];

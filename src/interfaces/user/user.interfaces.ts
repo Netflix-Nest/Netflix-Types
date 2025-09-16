@@ -1,6 +1,6 @@
 import { StatusUser, UserRole } from "../../enum/user.enum";
 
-export class User {
+export interface User {
   id: number;
   email: string;
   username: string;
@@ -16,4 +16,11 @@ export class User {
   createdAt: Date;
   updatedAt: Date;
   deletedAt?: Date;
+}
+
+export interface UserMention {
+  id: number;
+  username: string;
+  fullName: string;
+  avatar: string;
 }

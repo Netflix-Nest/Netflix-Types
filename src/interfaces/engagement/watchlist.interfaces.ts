@@ -1,4 +1,4 @@
-export class Watchlist {
+export interface Watchlist {
   id: number;
   userId: number;
   contentIds: number[];

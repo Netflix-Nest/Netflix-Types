@@ -1,6 +1,6 @@
 import { Content } from "./content.interfaces";
 
-export class Actor {
+export interface Actor {
   id: number;
   fullName: string;
   avatarUrl?: string;

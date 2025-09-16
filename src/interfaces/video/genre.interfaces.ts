@@ -1,6 +1,6 @@
 import { Content } from "./content.interfaces";
 
-export class Genre {
+export interface Genre {
   id: number;
   name: string;
   description: string;

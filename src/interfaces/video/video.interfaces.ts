@@ -1,6 +1,6 @@
 import { Content } from "./content.interfaces";
 
-export class Video {
+export interface Video {
   id: number;
   episodeNumber?: number;
   seasonNumber?: number;

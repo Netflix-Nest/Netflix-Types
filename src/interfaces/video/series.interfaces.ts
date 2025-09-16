@@ -1,6 +1,6 @@
 import { Content } from "./content.interfaces";
 
-export class Series {
+export interface Series {
   id: number;
   totalEpisodes: number;
   seasonNumber: number;

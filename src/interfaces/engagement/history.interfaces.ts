@@ -1,4 +1,4 @@
-export class History {
+export interface History {
   id: number;
   userId: number;
   contentId: number;

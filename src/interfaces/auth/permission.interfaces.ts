@@ -1,6 +1,6 @@
 import { Role } from "./role.interfaces";
 
-export class Permission {
+export interface Permission {
   id: number;
   method: string;
   apiPath: string;

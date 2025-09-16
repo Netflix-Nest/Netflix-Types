@@ -1,4 +1,4 @@
-export class Comment {
+export interface Comment {
   userId: number;
   content: string;
   contentId: number;
@@ -8,7 +8,7 @@ export class Comment {
   updatedAt: Date;
 }
 
-export class CommentClient extends Comment {
+export interface CommentClient extends Comment {
   _id: string;
   replies?: CommentClient[];
 }
