@@ -1,4 +1,5 @@
 import { StatusUser, UserRole } from "../../enum/user.enum";
+import { Genre } from "../video/genre.interfaces";
 
 export interface User {
   id: number;
@@ -18,7 +19,12 @@ export interface User {
   deletedAt?: Date;
 }
 
-export type UserProfile = Omit<User, "password" | "refreshToken">;
+export type UserProfile = Omit<
+  User,
+  "password" | "refreshToken" | "favoriteGenre"
+> & {
+  favoriteGenre: Genre[];
+};
 
 export interface UserMention {
   id: number;
