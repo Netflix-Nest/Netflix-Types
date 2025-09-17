@@ -18,6 +18,8 @@ export interface User {
   deletedAt?: Date;
 }
 
+export type UserProfile = Omit<User, "password" | "refreshToken">;
+
 export interface UserMention {
   id: number;
   username: string;
