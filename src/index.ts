@@ -21,6 +21,7 @@ export * from "./dto/video/create-series.dto";
 export * from "./dto/video/create-tag.dto";
 export * from "./dto/video/create-video.dto";
 export * from "./dto/watchlist/create-watchlist.dto";
+export * from "./dto/user/user.dto";
 
 // Enums
 export * from "./enum/auth.enum";
