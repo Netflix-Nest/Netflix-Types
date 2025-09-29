@@ -1,7 +1,7 @@
 export interface History {
   id: number;
   userId: number;
-  contentId: number;
+  videoId: number;
   watchedAt: Date;
   duration: number;
   deviceInfo: string;

@@ -1,11 +1,11 @@
-import { IsNotEmpty, IsOptional } from 'class-validator';
+import { IsNotEmpty, IsOptional } from "class-validator";
 
 export class AddHistoryDto {
   @IsNotEmpty()
   userId: number;
 
   @IsNotEmpty()
-  contentId: number;
+  videoId: number;
 
   @IsNotEmpty()
   watchedAt: Date;

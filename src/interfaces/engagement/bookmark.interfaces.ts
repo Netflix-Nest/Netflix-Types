@@ -1,7 +1,7 @@
 export interface Bookmark {
   id: number;
   userId: number;
-  contentId: number;
+  videoId: number;
   timestamp: number;
   note: string;
   createdAt: Date;
